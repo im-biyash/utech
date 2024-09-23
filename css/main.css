@@ -32,7 +32,7 @@ nav {
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 100px;
-  z-index: 10; 
+  z-index: 10;
 }
 
 .logo {
@@ -51,14 +51,35 @@ nav {
   gap: 20px;
 }
 
+.nav-links ul li {
+  position: relative;
+}
+
 .nav-links ul li a {
   text-decoration: none;
   color: #333;
   font-weight: 600;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.nav-links ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links ul li a:hover::after {
+  width: 100%;
 }
 
 .icon {
-  display: none; 
+  display: none;
   font-size: 28px;
   cursor: pointer;
 }
@@ -68,7 +89,7 @@ nav {
 }
 
 .open-icon {
-  display: none; 
+  display: none;
 }
 
 /* Media Query for smaller screens (max-width: 768px) */
