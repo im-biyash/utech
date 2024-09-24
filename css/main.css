@@ -146,6 +146,7 @@ nav {
 /* Content Container */
 .content-container {
   display: flex;
+  
   align-items: start;
   justify-content: space-between;
   width: 100%;
@@ -166,7 +167,7 @@ nav {
   font-weight: bold;
   transition: background-color 0.3s ease;
   position: relative;
-  top: 20px;
+  top: 40px;
 }
 
 .hero-btn:hover {
@@ -221,7 +222,6 @@ nav {
 
 /* gallery section */
 .gallery-section {
-  margin: 50px 0;
   text-align: center;
   width: 80%;
   margin: 0 auto;
@@ -306,6 +306,7 @@ nav {
 
 .event-card:hover {
   transform: translateY(-5px);
+  background-color: beige;
 }
 
 .event-image {
